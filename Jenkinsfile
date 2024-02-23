@@ -1,5 +1,14 @@
 @Library('shared-library') _
-
+piprline{
+    agent any 
+    stages{
+        stage('Test the deploy'){
+            steps{
+                  my_shared_library()
+            }
+        }
+    }
+}
 // pipeline {
 //     agent any
     
